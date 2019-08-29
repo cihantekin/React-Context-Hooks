@@ -3,7 +3,7 @@ import { BookContext } from '../contexts/BookContext';
 import BookDetails from './BookDetails'
 
 const BookList = () => {
-    const {books, addBook} = useContext(BookContext)
+    const {books, dispatch} = useContext(BookContext)
 
     return books.length ? ( 
         <div className="book-list">
